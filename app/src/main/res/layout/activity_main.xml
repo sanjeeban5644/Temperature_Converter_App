@@ -4,15 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#758BC5"
+    android:soundEffectsEnabled="false"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/heading"
+        android:layout_width="149dp"
+        android:layout_height="30dp"
+        android:background="#758BC5"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|top"
+        android:hapticFeedbackEnabled="false"
+        android:text="WELCOME"
+        android:textColor="#B60454"
+        android:textColorHighlight="#880E4F"
+        android:textColorHint="#F10606"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:emojiCompatEnabled="false"
+        app:guidelineUseRtl="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/celciusnochange"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        android:background="#758BC5"
+        android:gravity="center|left"
+        android:text="Enter Temperature in Celcius : "
+        android:textColor="#D50000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <EditText
+        android:id="@+id/celciusdata"
+        android:layout_width="76dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/celciusnochange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/fardisplay"
+        android:layout_width="325dp"
+        android:layout_height="26dp"
+        android:background="#758BC5"
+        android:gravity="center|left"
+        android:textColorLink="#9410D6"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:hapticFeedbackEnabled="false"
+        android:text="SUBMIT"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368"
+        app:rippleColor="#DC0C0C" />
+
+    <TextView
+        android:id="@+id/kelvindisplay"
+        android:layout_width="322dp"
+        android:layout_height="25dp"
+        android:background="#758BC5"
+        android:gravity="center|left"
+        android:textColor="#020202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
